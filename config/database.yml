@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: ftdeals_production
-  username: ftdeals
-  password: <%= ENV['FTDEALS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
