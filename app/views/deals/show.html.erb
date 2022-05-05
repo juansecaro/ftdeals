@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deal.name %>
+</p>
+
+<p>
+  <strong>Regular price:</strong>
+  <%= @deal.regular_price %>
+</p>
+
+<p>
+  <strong>Discounted price:</strong>
+  <%= @deal.discounted_price %>
+</p>
+
+<p>
+  <strong>Best price:</strong>
+  <%= @deal.best_price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @deal.description %>
+</p>
+
+<p>
+  <strong>Campaign:</strong>
+  <%= @deal.campaign_id %>
+</p>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>
